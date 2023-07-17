@@ -1,0 +1,31 @@
+{
+    "name": "joegabdelsater/survey-generator",
+    "description": "This package is a plug and play package for creating survey feature to your project",
+    "type": "library",
+    "license": "MIT",
+    "version": "2.0.0",
+    "authors": [
+        {
+            "name": "Joe Abdel Sater",
+            "email": "joegabdelsater@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Joegabdelsater\\SurveyGenerator\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joegabdelsater\\SurveyGenerator\\SurveyGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "SurveyGenerator": "Joegabdelsater\\SurveyGenerator\\Facades\\SurveyGenerator"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
